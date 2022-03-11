@@ -1,0 +1,90 @@
+/* Isto é um comentário CSS.
+ *
+ * Comentários CSS servem para anotarmos qualquer coisa que quisermos
+ * sobre o que estamos fazendo.
+ *
+ * O CSS serve para especificar a aparência de todos os elementos da página.
+ * É extremamente importante entender que a ideia do HTML é que a estrutura
+ * é separada da apresentação.
+ * 
+ * Estrutura = HTML
+ * Apresentação = CSS
+ *
+ * Como especificamos a aparência no CSS?
+ * Um arquivo CSS é feito de várias regras.
+ * 
+ * Uma regra começa com um seletor. Um seletor é uma forma de casar vários elementos
+ * no HTML.
+ */
+
+/* Aqui o seletor é "h1".
+ * O tipo mais simples de seletor no CSS é o nome de um tipo de tag.
+ * Um seletor de tag vai fazer a regra se aplicar a toda tag daquele tipo
+ * no HTML.
+ */
+body {
+    /* No CSS, podemos manipular a caixa que forma cada elemento. 
+     * Isso é feito pelas propriedades de caixa.
+     * As propriedades de caixa são:
+     * margin-left, margin-right, margin-top e margin-bottom;
+     * height e width;
+     * padding-left, padding-right, padding-top e padding-bottom;
+     */
+    
+    margin-left: 0;   /* Margem da esquerda */
+    margin-right: 0;  /* Margem da direita  */
+    margin-bottom: 0; /* Margem de baixo    */
+    margin-top: 0;    /* Margem de cima     */
+}
+
+main {
+    /* background-color é a propriedade de cor de fundo */
+    background-color: rgb(40, 40, 40);
+}
+
+h1 {
+    color: red; /* Esta regra significa "os h1 são vermelhos" */
+
+    margin-top: 0;
+}
+
+h2 {
+    color: blue; /* Esta regra significa "os h2 são azuis" */
+}
+
+ul {
+    padding-top: 50px;
+}
+
+ol {
+    padding-top: 50px;
+}
+
+/* Podemos construir seletores mais complexos.
+ * Por exemplo, se eu quiser que os h3 sejam diferentes
+ * dependendo do tipo de lista que eles estão dentro: 
+ */
+ul li h3 { /* O seletor aqui significa 
+            * "h3 que estão dentro de um li, que estão dentro de um ul" 
+            */
+    color: green; /* Portanto, a regra significa 
+                   * "todo h3 dentro de um li dentro de um ul é verde" 
+                   */
+    padding-left: 100px;
+}
+
+ul li p {
+    padding-left: 100px;
+}
+
+/* Aqui, a regra significa "todo h3 dentro de um ol tem a cor rgb(120, 100, 250) */
+ol h3 {
+    /* Você também pode selecionar uma cor
+     * especificando quanto de vermelho, quanto de verde e quanto de azul
+     * você quer.
+     *
+     * Os números de cores vão de 0 a 255.
+     */
+    color: rgb(0, 180, 125);
+    padding-left: 100px;
+}

@@ -1,0 +1,53 @@
+<!--
+  A declaração DOCTYPE serve para o browser saber que
+  o que vai se seguir é um documento HTML, para que ele
+  possa ler o conteúdo e desenhar ele corretamente.
+-->
+<!DOCTYPE html>
+<!--
+  Todo documento HTML começa com a tag <html>, que contém
+  todo o conteúdo dele.
+-->
+<html>
+    <!--
+      Dentro da tag <html>, sempre temos as tags <head> e <body>.
+      A tag <head> serve para conteúdo que *não* aparece na
+      página, como o título e outras informações;
+
+      A tag <body> contém todo o conteúdo que aparece na página.
+    -->
+    <head>
+	<!--
+          O título da página é definido na tag <title>.
+	-->
+	<title>Elementos HTML</title>
+    </head>
+    <body>
+       <main><!-- Seção principal da página -->
+          <h1>Tipos de Listas</h1><!-- h1: "Header 1" - Cabeçalho de primeiro nível -->
+	  <h2>Lista desordenada</h2><!-- h2: "Header 2" - Cabeçalho de segundo nível -->
+	  <ul><!-- ul: "Unordered List" ou "Lista sem ordenação" -->
+	    <li> <!-- li: "List Item" ou "Item de lista" -->
+	      <h3>Item 1 da lista desordenada</h3><!-- h3: "Header 3": Cabeçalho de terceiro nível -->
+              <p>Parágrafo 1</p><!-- parágrafo -->
+              <button onclick="alert('Botão clicado');">Clique aqui</button><!-- botão -->
+	    </li>
+	    <li>
+	      <h3>Item 2 da lista desordenada</h3>
+	      <p>Parágrafo 2</p>
+	    </li>
+	  </ul>
+	  <h2>Lista ordenada</h2>
+	  <ol><!-- ol: "Ordered list" ou "Lista com ordem" -->
+	    <li>
+	      <h3>Item 1 da lista ordenada</h3>
+	      <p>Parágrafo 3</p>
+	    </li>
+	  </ol>
+	</main>
+    </body>
+<!--
+    Quase todas as tags precisam ser fechadas.
+    A tag <tag> vai ser sempre fechada pela tag </tag>
+-->
+</html>

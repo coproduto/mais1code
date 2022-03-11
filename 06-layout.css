@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* vh = viewport height (altura da tela visível) */
+    height: 100vh;
+    /* hw = viewport width (largura da tela visível) */
+    width: 100vw;
+    background-color: #0066cc;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    /* px = pixels */
+    width: calc(100% - 30px);
+    height: 60px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+}
+
+main {
+    /* altura em porcentagem = porcentagem da altura do pai */
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+nav {
+    display: inline-block;
+    height: calc(100% - 20px);
+    width: calc(30% - 20px);
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+section {    
+    display: inline-block;
+    width: calc(69% - 20px);
+    height: calc(100% - 20px);
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Tipos de display CSS:
+    O tipo de display define como uma caixa é desenhada
+    na tela.
+
+    Os tipos de display básicos são:
+    * block (o mais comum):
+      * Uma caixa que ocupa toda a largura da tela.
+
+    * inline (usado para texto e afins):
+      * Conteúdo que flui dentro de uma linha.
+      * Não pode ter filhos.
+
+    * inline-block:
+      * Uma caixa que pode ter filhos mas faz parte
+        de uma linha.
+*/

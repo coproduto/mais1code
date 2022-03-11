@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+ * Todo elemento no HTML, quando desenhado, tem 3 características:
+ * A primeira é que ele tem uma caixa de conteúdo (um retângulo na página).
+ * A segunda é que ele pode ter margens.
+
+ * Quando você carrega uma página no browser, o browser aplica
+ * sempre uma "folha de estilo padrão" que já contém as definições
+ * de como que as coisas devem ser desenhadas.
+-->
+<html>
+    <head>
+        <!--
+        * A ligação do CSS com o HTML é feita pela tag link.
+        * A tag link tem o atributo "rel" que diz qual é a relação
+        * daquele link com a página que usa ele.
+        * Para carregar CSS, o valor de rel é "stylesheet" 
+        * (em inglês, "folha de estilos")
+        * Além disso, a tag tem o atributo "href" que serve para
+        * dizermos onde está o recurso linkado.
+        * A tag link não é fechada.
+        -->
+        <link rel="stylesheet" href="style2.css">
+	<title>Elementos HTML</title>
+    </head>
+    <body>
+       <main><!-- Seção principal da página -->
+          <h1>Tipos de Listas</h1><!-- h1: "Header 1" - Cabeçalho de primeiro nível -->
+	  <h2>Lista desordenada</h2><!-- h2: "Header 2" - Cabeçalho de segundo nível -->
+	  <ul><!-- ul: "Unordered List" ou "Lista sem ordenação" -->
+	    <h3>Exemplo</h3>
+	    <li> <!-- li: "List Item" ou "Item de lista" -->
+	      <h3>Item 1 da lista desordenada</h3><!-- h3: "Header 3": Cabeçalho de terceiro nível -->
+              <p>Parágrafo 1</p><!-- parágrafo -->
+              <button onclick="alert('Botão clicado');">Clique aqui</button><!-- botão -->
+	    </li>
+	    <li>
+	      <h3>Item 2 da lista desordenada</h3>
+	      <p>Parágrafo 2</p>
+	    </li>
+	  </ul>
+	  <h2>Lista ordenada</h2>
+	  <ol><!-- ol: "Ordered list" ou "Lista com ordem" -->
+	    <li>
+	      <h3>Item 1 da lista ordenada</h3>
+	      <p>Parágrafo 3</p>
+	    </li>
+	  </ol>
+	</main>
+    </body>
+</html>

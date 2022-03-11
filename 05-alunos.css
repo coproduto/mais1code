@@ -1,0 +1,42 @@
+/*
+ * Propriedades de caixa
+ * height: Altura da caixa
+ * width: Largura da caixa
+ * margin: Espaço do lado de fora da caixa
+ * padding: Espaço do lado de dentro da caixa (acolchoamento)
+ * border: Bordas da caixa, podem ser coloridas e ter vários estilos
+ */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    margin: 6px 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul div {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: left;
+}

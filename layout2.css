@@ -1,0 +1,127 @@
+/* Flexbox */
+/* O que é o Flexbox? 
+ *
+ * O Flexbox é um tipo de display introduzido há alguns anos
+ * atrás no CSS para dar melhor suporte a dispositivos com tamanhos
+ * de tela variados e melhorar a possibilidade de construir layouts
+ * no CSS em geral.
+ */
+
+/* Sobre o modelo de caixas:
+   
+   Se uma caixa não tem altura definida,
+   mas tem conteúdo, a altura dela é a altura do
+   conteúdo que tem dentro dela. */
+body {
+    display: flex; /* Torna essa caixa um pai flexível */
+                   /* Os filhos de um pai flexível     */
+                   /* dividem o espaço dele            */
+    flex-direction: column; /* A direção flexível vai definir 
+                             * se os filhos se distribuem na
+                             * vertical ou horizontal
+                             */
+    background-color: #0099cc;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh; /* vh = viewport height =                */
+                   /* altura da área onde o browser desenha */
+                   /* 1vh = 1% da altura dessa área         */
+                   /* 100vh = 100% da altura da área        */
+                   /* viewport = "portal de visualização"   */
+}
+
+header {
+    border: 1px solid white; /* borda = linha colorida em torno */
+                             /* do elemento                     */
+                             /*                                 */
+                             /* tem grossura, estilo e cor      */
+    /* A propriedade acima é a mesma coisa que fazer: */
+    /* border-width: 1px; 
+     * border-style: solid; 
+     * border-color: white; */
+    text-align: center;
+    margin: 5px; /* Só uma medida em margin ou padding = */
+                 /* todos os lados                       */
+    /* A propriedade acima é a mesma coisa que fazer:
+     * margin-top: 5px;    (acima)
+     * margin-right: 5px;  (direita)
+     * margin-bottom: 5px; (abaixo)
+     * margin-left: 5px;   (esquerda)
+     */
+    padding: 5px;
+    /* A propriedade acima é a mesma coisa que fazer:
+     * padding-top: 5px;    (acima)
+     * padding-right: 5px;  (direita)
+     * padding-bottom: 5px; (abaixo)
+     * padding-left: 5px;   (esquerda)
+     */
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    display: flex;
+    flex: 3;
+    border: 1px solid white;
+    margin: 0 5px 5px 5px;
+    /* Assim como acima, aqui segue no sentido do relógio:
+       acima, direita, abaixo e esquerda.
+       Assim definimos as 4 margens de uma vez só.
+
+       A propriedade acima é a mesma coisa que fazer:
+       margin-top: 0;    (acima)
+       margin-right: 5px;  (direita)
+       margin-bottom: 5px; (abaixo)
+       margin-left: 5px;   (esquerda)
+     */
+
+    /* Toda caixa flexível tem um eixo principal
+     * e um eixo secundário.
+     * O eixo principal é aquele ao longo do qual os
+     * elementos são distribuídos.
+     * 
+     * Coluna: o eixo principal é na vertical
+     * Linha: o eixo principal é na horizontal
+     *
+     * Coluna: o eixo secundário é na horizontal
+     * Linha: o eixo secundário é na vertical
+     */
+
+    /* justify-content define como os filhos se organizam  *
+     * no eixo principal                                   *
+     *
+     * o justify-content é como a opção de alinhar o texto *
+     * no Word                                             */
+    justify-content: center;
+
+    /* align-items define como os filhos se organizam *
+     * no eixo secundário                             *
+     * 
+     * o align-items é como organizar os parágrafos   *
+     * na página.                                     */
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex: 7;
+    border: 1px solid white;
+    margin: 0 5px 5px 0;
+    /* Assim como acima, aqui segue no sentido do relógio:
+       acima, direita, abaixo e esquerda.
+       Assim definimos as 4 margens de uma vez só.
+
+       A propriedade acima é a mesma coisa que fazer:
+       margin-top: 0;    (acima)
+       margin-right: 5px;  (direita)
+       margin-bottom: 5px; (abaixo)
+       margin-left: 0;   (esquerda)
+     */
+    
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    height: 100px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body div {
+    height: 50px;
+}
+
+#div1 {
+    background-color: red;
+    width: 50px;
+}
+
+#div2 {
+    background-color: blue;
+    width: 100px;
+}
+
+#div3 {
+    background-color: green;
+    width: 200px;
+}
